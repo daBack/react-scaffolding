@@ -1,0 +1,153 @@
+*
+ margin: 0
+ padding: 0
+ font-family: sans-serif
+
+$white: #ebebeb
+$darkBlue: #253545
+
+.marginAuto
+  margin: auto
+
+.h1
+  font-size: 3em
+  text-transform: uppercase
+
+.h3
+  color: $white
+  font-size: 2em
+
+.h3Code
+  color: #e9ae15
+
+.h4Code
+  color: $darkBlue
+
+.darkBlue
+  color: #253545 !important
+
+.white
+  color: $white
+
+.dFlex
+  display: flex
+
+.textIndent
+  text-indent: 30px
+
+.textIndentX2
+  text-indent: 50px
+
+.padd
+  padding-bottom: 20px
+
+a
+  position: relative
+  animation: fadeIn 1s ease-in-out
+
+.row
+  flex-direction: row !important
+
+/*****************************
+  *                  Page 1                    *
+ *****************************/
+
+.page1
+  display: flex
+  flex-direction: column
+  height: 100vh
+  background-color: #16a085
+
+  h1
+    margin: auto
+    position: relative
+    animation: float 2s ease-in-out 0s infinite;
+    font-size: 4em
+    color: $white
+
+/*****************************
+  *                  Animations              *
+ *****************************/
+
+@keyframes float
+  0%, 100%
+    top: -10px
+
+  50%
+    top: 0px
+
+@keyframes fadeIn
+  0%
+    top: -25px
+    opacity: 0
+
+  100%
+    top: 0
+    opacity: 1
+
+@keyframes ltr
+  0%
+    right: 10%
+    opacity: 0
+
+  100%
+    right: 0
+    opacity: 1
+
+@keyframes coolShit
+  0%
+
+  20%
+    background-position: 0 -100%;
+    color: $white
+  90%
+
+  100%
+    color: rgb(26, 26, 26)
+    background-position: 0 -100%
+
+
+@keyframes coolShit2
+  0%
+
+  20%
+    background-position: 0 -100%;
+    color: $white
+  90%
+
+  100%
+    background-position: 0 -100%
+
+@keyframes rtl
+    0%
+      right: 10%
+      opacity: 0
+
+    90%
+
+    100%
+      background-position: -100% 0
+      right: 0
+      opacity: 1
+      color: $white
+
+@keyframes rtl2
+    0%
+      opacity: 0
+
+    90%
+
+    100%
+      background-position: -100% 0
+      opacity: 1
+      color: $white
+
+@keyframes shplop
+  0%
+
+  80%
+    transform: rotate(-10deg)
+    top: 5%
+  100%
+    top: 10%
+    transform: rotate(0)

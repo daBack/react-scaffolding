@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.marginAuto {
+  margin: auto; }
+
+.h1 {
+  font-size: 3em;
+  text-transform: uppercase; }
+
+.h3 {
+  color: #ebebeb;
+  font-size: 2em; }
+
+.h3Code {
+  color: #e9ae15; }
+
+.h4Code {
+  color: #253545; }
+
+.darkBlue {
+  color: #253545 !important; }
+
+.white {
+  color: #ebebeb; }
+
+.dFlex {
+  display: flex; }
+
+.textIndent {
+  text-indent: 30px; }
+
+.textIndentX2 {
+  text-indent: 50px; }
+
+.padd {
+  padding-bottom: 20px; }
+
+a {
+  position: relative;
+  animation: fadeIn 1s ease-in-out; }
+
+.row {
+  flex-direction: row !important; }
+
+/*****************************
+  *                  Page 1                    *
+ *****************************/
+.page1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #16a085; }
+  .page1 h1 {
+    margin: auto;
+    position: relative;
+    animation: float 2s ease-in-out 0s infinite;
+    font-size: 4em;
+    color: #ebebeb; }
+
+/*****************************
+  *                  Animations              *
+ *****************************/
+@keyframes float {
+  0%, 100% {
+    top: -10px; }
+  50% {
+    top: 0px; } }
+
+@keyframes fadeIn {
+  0% {
+    top: -25px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes ltr {
+  0% {
+    right: 10%;
+    opacity: 0; }
+  100% {
+    right: 0;
+    opacity: 1; } }
+
+@keyframes coolShit {
+  0% { }
+  20% {
+    background-position: 0 -100%;
+    color: #ebebeb; }
+  90% { }
+  100% {
+    color: #1a1a1a;
+    background-position: 0 -100%; } }
+
+@keyframes coolShit2 {
+  0% { }
+  20% {
+    background-position: 0 -100%;
+    color: #ebebeb; }
+  90% { }
+  100% {
+    background-position: 0 -100%; } }
+
+@keyframes rtl {
+  0% {
+    right: 10%;
+    opacity: 0; }
+  90% { }
+  100% {
+    background-position: -100% 0;
+    right: 0;
+    opacity: 1;
+    color: #ebebeb; } }
+
+@keyframes rtl2 {
+  0% {
+    opacity: 0; }
+  90% { }
+  100% {
+    background-position: -100% 0;
+    opacity: 1;
+    color: #ebebeb; } }
+
+@keyframes shplop {
+  0% { }
+  80% {
+    transform: rotate(-10deg);
+    top: 5%; }
+  100% {
+    top: 10%;
+    transform: rotate(0); } }
